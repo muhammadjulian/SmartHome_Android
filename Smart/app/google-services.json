@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "878382075418",
+    "firebase_url": "https://smart-b1875.firebaseio.com",
+    "project_id": "smart-b1875",
+    "storage_bucket": "smart-b1875.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878382075418:android:59938c1091482aa1",
+        "android_client_info": {
+          "package_name": "com.example.smart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878382075418-9svek0kt7ojotvhhhbpamr6c5bkhdbno.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smart",
+            "certificate_hash": "2bef137ec0f3da1f1a63c553e6678b2df6ea78ce"
+          }
+        },
+        {
+          "client_id": "878382075418-uhm59nnvt5gstnlsk43l9naaeuv8qa9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCKNXuPlk7z1RwQNksrBFDKhGNULfV40k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878382075418-uhm59nnvt5gstnlsk43l9naaeuv8qa9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
