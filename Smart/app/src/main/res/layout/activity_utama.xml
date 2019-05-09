@@ -15,15 +15,32 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ligth_bulb"/>
 
-    <ToggleButton
-        android:id="@+id/tooglebutton"
+    <Button
+        android:id="@+id/tombol_on"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="ToggleButton"
-        android:paddingTop="20dp"
-        android:paddingRight="40dp"
-        android:paddingLeft="40dp"
-        android:paddingBottom="20dp" />
+        android:text="ON"
+        android:background="@color/color4"
+        android:padding="10dp"/>
 
+    <Button
+        android:id="@+id/tombol_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="status"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffcd"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"/>
 </LinearLayout>
