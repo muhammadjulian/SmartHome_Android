@@ -3,4 +3,7 @@
     <string name="isi_username">Masukkan Username</string>
     <string name="isi_password">Masukkan Password</string>
     <string name="masukkan_e_mail">Masukkan e-mail</string>
+
+    <string name="action_lamp">You selected Lamp.</string>
+    <string name="action_situation">You selected Situation.</string>
 </resources>

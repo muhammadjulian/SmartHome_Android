@@ -18,9 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import org.w3c.dom.Text;
-
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class Register extends AppCompatActivity implements View.OnClickListener {
 
     private Button buttonregister;
     private EditText editTextpassword;
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_register);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -71,11 +69,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         if (task.isSuccessful()){
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             sendEmailVerification();
-                            Toast.makeText(MainActivity.this, "REGISTERED SUCCESSFULLY", Toast.LENGTH_SHORT).show();
-                            Intent registerIntent = new Intent(MainActivity.this, Login.class);
-                            MainActivity.this.startActivity(registerIntent);
+                            Toast.makeText(Register.this, "REGISTERED SUCCESSFULLY", Toast.LENGTH_SHORT).show();
+                            Intent registerIntent = new Intent(Register.this, Login.class);
+                            Register.this.startActivity(registerIntent);
                         }else {
-                            Toast.makeText(MainActivity.this, "COULD NOT REGISTER.. PLEASE TRY AGAIN", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "COULD NOT REGISTER.. PLEASE TRY AGAIN", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

@@ -6,17 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class Utama extends AppCompatActivity {
+public class Lamp extends AppCompatActivity {
     Button b_on;
     Button b_off;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_utama);
+        setContentView(R.layout.activity_lamp);
 
         final ImageView image = (ImageView) findViewById(R.id.image);
         b_on = (Button)findViewById(R.id.tombol_on);
@@ -31,6 +33,8 @@ public class Utama extends AppCompatActivity {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 DatabaseReference myRef = database.getReference("LED_STATUS");
                 myRef.setValue(1);
+
+                Toast.makeText(Lamp.this, "Lamp is ON", Toast.LENGTH_SHORT);
             }
         });
 
@@ -43,6 +47,8 @@ public class Utama extends AppCompatActivity {
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 DatabaseReference myRef = database.getReference("LED_STATUS");
                 myRef.setValue(0);
+
+                Toast.makeText(Lamp.this, "Lamp is OFF", Toast.LENGTH_SHORT);
             }
         });
     }

@@ -72,7 +72,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                         if (task.isSuccessful()){
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             Toast.makeText(Login.this, "SIGN IN SUCCESSFULLY", Toast.LENGTH_SHORT).show();
-                            Intent masukIntent = new Intent(Login.this, Utama.class);
+                            Intent masukIntent = new Intent(Login.this, HalamanUtama.class);
                             Login.this.startActivity(masukIntent);
                         }else {
                             Toast.makeText(Login.this, "COULD NOT REGISTER.. PLEASE TRY AGAIN", Toast.LENGTH_SHORT).show();
@@ -86,7 +86,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             masukUser();
         }
         if (view == textViewregis){
-            Intent masIntent = new Intent(Login.this, MainActivity.class);
+            Intent masIntent = new Intent(Login.this, Register.class);
             Login.this.startActivity(masIntent);
         }
     }
