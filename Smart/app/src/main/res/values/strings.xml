@@ -6,4 +6,11 @@
 
     <string name="action_lamp">You selected Lamp.</string>
     <string name="action_situation">You selected Situation.</string>
+
+    <string name="Notification">Notification</string>
+    <string name="notification">Notification!</string>
+    <string name="notification_title">Danger!</string>
+    <string name="notification_text">Komputer Anda Hilang.</string>
+    <string name="notification_channel_name">SmartLed Notification</string>
+    <string name="notification_channel_description">Notification from SmartLed</string>
 </resources>

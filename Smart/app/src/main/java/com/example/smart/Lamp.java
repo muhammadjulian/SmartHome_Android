@@ -24,6 +24,8 @@ public class Lamp extends AppCompatActivity {
         b_on = (Button)findViewById(R.id.tombol_on);
         b_off = (Button) findViewById(R.id.tombol_off);
 
+
+
         b_on.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +37,8 @@ public class Lamp extends AppCompatActivity {
                 myRef.setValue(1);
 
                 Toast.makeText(Lamp.this, "Lamp is ON", Toast.LENGTH_SHORT);
+
+
             }
         });
 

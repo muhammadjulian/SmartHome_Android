@@ -1,14 +1,14 @@
 package com.example.smart;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Splash extends AppCompatActivity {
+public class Splash extends Activity {
     private TextView tvSplash;
     private ImageView ivSplash;
     @Override

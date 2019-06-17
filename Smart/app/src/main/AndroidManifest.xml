@@ -11,9 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HalamanUtama"></activity>
+        <activity android:name=".Notification"></activity>
+        <activity android:name=".HalamanUtama" />
         <activity android:name=".Situation" />
-        <activity android:name=".Lamp"></activity>
+        <activity android:name=".Lamp" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

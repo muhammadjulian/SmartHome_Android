@@ -4,6 +4,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HalamanUtama">
+    android:background="@color/color2"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.smart.HalamanUtama">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="422dp"
+        android:layout_height="171dp"
+        android:layout_weight="2"
+        android:background="@color/color1"
+        app:layout_constraintBottom_toTopOf="@+id/mainGrid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="428dp"
+        android:layout_height="553dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="126dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/color2"
+            app:cardCornerRadius="36dp"
+            app:cardElevation="15dp">>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:background="#8187">
+
+                <ImageView
+                    android:id="@+id/tombol_lamp"
+                    android:layout_width="322dp"
+                    android:layout_height="171dp"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:src="@drawable/lamp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LAMP"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/color2"
+            app:cardCornerRadius="36dp"
+            app:cardElevation="15dp">>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:background="#ff00"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/tombol_situation"
+                    android:layout_width="323dp"
+                    android:layout_height="158dp"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:src="@drawable/risk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="SITUATION"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </GridLayout>
+
 
 </android.support.constraint.ConstraintLayout>
